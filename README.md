@@ -7,21 +7,11 @@ Built with Visual Basic and Microsoft SQL Server.
 
 This project demonstrates a simple hospital database system including database queries and a Visual Basic application.
 
-## Technologies Used
+## Tools Used
 
 - Visual Basic
 - Microsoft SQL Server
 - SQL
-
-## Project Structure
-
-Wellmeadows-Hospital
-│
-├── VB
-│   Visual Basic application source code
-│
-├── Database Query
-│   SQL scripts and database queries
 
 ## Author
 
