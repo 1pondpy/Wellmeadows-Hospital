@@ -1,0 +1,65 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Wellmeadows Hospital\\Visual Basic\\WellmeadowsHospital\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81BB5719-A280-4E39-A31D-DB3C63D3A615}|WellmeadowsHospital.vbproj|d:\\wellmeadows hospital\\visual basic\\wellmeadowshospital\\wellmeadows.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{81BB5719-A280-4E39-A31D-DB3C63D3A615}|WellmeadowsHospital.vbproj|solutionrelative:wellmeadows.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81BB5719-A280-4E39-A31D-DB3C63D3A615}|WellmeadowsHospital.vbproj|D:\\Wellmeadows Hospital\\Visual Basic\\WellmeadowsHospital\\wellmeadows.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{81BB5719-A280-4E39-A31D-DB3C63D3A615}|WellmeadowsHospital.vbproj|solutionrelative:wellmeadows.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Wellmeadows.vb",
+              "DocumentMoniker": "D:\\Wellmeadows Hospital\\Visual Basic\\WellmeadowsHospital\\Wellmeadows.vb",
+              "RelativeDocumentMoniker": "Wellmeadows.vb",
+              "ToolTip": "D:\\Wellmeadows Hospital\\Visual Basic\\WellmeadowsHospital\\Wellmeadows.vb",
+              "RelativeToolTip": "Wellmeadows.vb",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAwFgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-10-02T04:45:57.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Wellmeadows.vb [Design]",
+              "DocumentMoniker": "D:\\Wellmeadows Hospital\\Visual Basic\\WellmeadowsHospital\\Wellmeadows.vb",
+              "RelativeDocumentMoniker": "Wellmeadows.vb",
+              "ToolTip": "D:\\Wellmeadows Hospital\\Visual Basic\\WellmeadowsHospital\\Wellmeadows.vb [Design]",
+              "RelativeToolTip": "Wellmeadows.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-09-30T11:33:29.298Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

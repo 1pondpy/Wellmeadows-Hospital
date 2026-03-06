@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81BB5719-A280-4E39-A31D-DB3C63D3A615}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WellmeadowsHospital.My.MyApplication</StartupObject>
+    <RootNamespace>WellmeadowsHospital</RootNamespace>
+    <AssemblyName>WellmeadowsHospital</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WellmeadowsHospital.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WellmeadowsHospital.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clinic_AddClinic.Designer.vb">
+      <DependentUpon>Clinic_AddClinic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clinic_AddClinic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clinic_SearchClinic.Designer.vb">
+      <DependentUpon>Clinic_SearchClinic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clinic_SearchClinic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_InpatientReport.Designer.vb">
+      <DependentUpon>Dashboard_InpatientReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_InpatientReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_InsNoHaveGraph.Designer.vb">
+      <DependentUpon>Dashboard_InsNoHaveGraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_InsNoHaveGraph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_InsPatientBar.Designer.vb">
+      <DependentUpon>Dashboard_InsPatientBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_InsPatientBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_MedicationReport.Designer.vb">
+      <DependentUpon>Dashboard_MedicationReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_MedicationReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_OutpatientReport.Designer.vb">
+      <DependentUpon>Dashboard_OutpatientReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_OutpatientReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_PatientReceipt.Designer.vb">
+      <DependentUpon>Dashboard_PatientReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_PatientReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Requisition.Designer.vb">
+      <DependentUpon>Dashboard_Requisition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Requisition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_StaffAllocation.Designer.vb">
+      <DependentUpon>Dashboard_StaffAllocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_StaffAllocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_WaitingListReport.Designer.vb">
+      <DependentUpon>Dashboard_WaitingListReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_WaitingListReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard_WardReqBudget.Designer.vb">
+      <DependentUpon>Dashboard_WardReqBudget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_WardReqBudget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurance_Add.Designer.vb">
+      <DependentUpon>Insurance_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Insurance_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurance_Search.Designer.vb">
+      <DependentUpon>Insurance_Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Insurance_Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurance_Search_1.Designer.vb">
+      <DependentUpon>Insurance_Search_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Insurance_Search_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LD_AddLocalDoctor.Designer.vb">
+      <DependentUpon>LD_AddLocalDoctor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LD_AddLocalDoctor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LD_SearchLD.Designer.vb">
+      <DependentUpon>LD_SearchLD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LD_SearchLD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_AddBed.Designer.vb">
+      <DependentUpon>Patient_AddBed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_AddBed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_AddPatient.Designer.vb">
+      <DependentUpon>Patient_AddPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_AddPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_AppointmentBooking.Designer.vb">
+      <DependentUpon>Patient_AppointmentBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_AppointmentBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_InpatientAdmit.Designer.vb">
+      <DependentUpon>Patient_InpatientAdmit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_InpatientAdmit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_Insurance.Designer.vb">
+      <DependentUpon>Patient_Insurance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_Insurance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_MedRecord.Designer.vb">
+      <DependentUpon>Patient_MedRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_MedRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_NextOfKin.Designer.vb">
+      <DependentUpon>Patient_NextOfKin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_NextOfKin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_SearchInpatientName.Designer.vb">
+      <DependentUpon>Patient_SearchInpatientName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_SearchInpatientName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_SearchInsurance.Designer.vb">
+      <DependentUpon>Patient_SearchInsurance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_SearchInsurance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_SearchOutpatientName.Designer.vb">
+      <DependentUpon>Patient_SearchOutpatientName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_SearchOutpatientName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_SearchPatientName.Designer.vb">
+      <DependentUpon>Patient_SearchPatientName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_SearchPatientName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_SearchPatientName_1.Designer.vb">
+      <DependentUpon>Patient_SearchPatientName_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_SearchPatientName_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_SearchPatientNextOfKin.Designer.vb">
+      <DependentUpon>Patient_SearchPatientNextOfKin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_SearchPatientNextOfKin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Requisition_Add.Designer.vb">
+      <DependentUpon>Requisition_Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Requisition_Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room_AddRoom.Designer.vb">
+      <DependentUpon>Room_AddRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room_AddRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room_SearchRoom.Designer.vb">
+      <DependentUpon>Room_SearchRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room_SearchRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_AddStaff.Designer.vb">
+      <DependentUpon>Staff_AddStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_AddStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_AddStaffQual.Designer.vb">
+      <DependentUpon>Staff_AddStaffQual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_AddStaffQual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_AddStaffWorkExp.Designer.vb">
+      <DependentUpon>Staff_AddStaffWorkExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_AddStaffWorkExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_SearchByQual.Designer.vb">
+      <DependentUpon>Staff_SearchByQual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_SearchByQual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_SearchByWorkExp.Designer.vb">
+      <DependentUpon>Staff_SearchByWorkExp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_SearchByWorkExp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_SearchStaffName.Designer.vb">
+      <DependentUpon>Staff_SearchStaffName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_SearchStaffName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_SearchStaffName_1.Designer.vb">
+      <DependentUpon>Staff_SearchStaffName_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_SearchStaffName_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_StaffAllocation.Designer.vb">
+      <DependentUpon>Staff_StaffAllocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_StaffAllocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_AddNonSurgicalSupply.Designer.vb">
+      <DependentUpon>Supplies_AddNonSurgicalSupply.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_AddNonSurgicalSupply.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_AddPharmaceutical.Designer.vb">
+      <DependentUpon>Supplies_AddPharmaceutical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_AddPharmaceutical.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_AddSupplier.Designer.vb">
+      <DependentUpon>Supplies_AddSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_AddSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_AddSurgicalSupply.Designer.vb">
+      <DependentUpon>Supplies_AddSurgicalSupply.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_AddSurgicalSupply.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_SearchNonSurSupplyName.Designer.vb">
+      <DependentUpon>Supplies_SearchNonSurSupplyName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_SearchNonSurSupplyName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_SearchPharmaName.Designer.vb">
+      <DependentUpon>Supplies_SearchPharmaName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_SearchPharmaName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_SearchPharmaName_1.Designer.vb">
+      <DependentUpon>Supplies_SearchPharmaName_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_SearchPharmaName_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_SearchSupplierName.Designer.vb">
+      <DependentUpon>Supplies_SearchSupplierName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_SearchSupplierName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_SearchSupplierName_1.Designer.vb">
+      <DependentUpon>Supplies_SearchSupplierName_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_SearchSupplierName_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies_SearchSurSupplyName.Designer.vb">
+      <DependentUpon>Supplies_SearchSurSupplyName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplies_SearchSurSupplyName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.vb">
+      <DependentUpon>Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward_AddWardChargeNurse.Designer.vb">
+      <DependentUpon>Ward_AddWardChargeNurse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ward_AddWardChargeNurse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward_AddWeek.Designer.vb">
+      <DependentUpon>Ward_AddWeek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ward_AddWeek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward_SearchWard.Designer.vb">
+      <DependentUpon>Ward_SearchWard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ward_SearchWard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ward_SearchWeek.Designer.vb">
+      <DependentUpon>Ward_SearchWeek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ward_SearchWeek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wellmeadows.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wellmeadows.Designer.vb">
+      <DependentUpon>Wellmeadows.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WellmeadowsDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WellmeadowsDBDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Clinic_AddClinic.resx">
+      <DependentUpon>Clinic_AddClinic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clinic_SearchClinic.resx">
+      <DependentUpon>Clinic_SearchClinic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_InpatientReport.resx">
+      <DependentUpon>Dashboard_InpatientReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_InsNoHaveGraph.resx">
+      <DependentUpon>Dashboard_InsNoHaveGraph.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_InsPatientBar.resx">
+      <DependentUpon>Dashboard_InsPatientBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_MedicationReport.resx">
+      <DependentUpon>Dashboard_MedicationReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_OutpatientReport.resx">
+      <DependentUpon>Dashboard_OutpatientReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_PatientReceipt.resx">
+      <DependentUpon>Dashboard_PatientReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Requisition.resx">
+      <DependentUpon>Dashboard_Requisition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_StaffAllocation.resx">
+      <DependentUpon>Dashboard_StaffAllocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_WaitingListReport.resx">
+      <DependentUpon>Dashboard_WaitingListReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_WardReqBudget.resx">
+      <DependentUpon>Dashboard_WardReqBudget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurance_Add.resx">
+      <DependentUpon>Insurance_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurance_Search.resx">
+      <DependentUpon>Insurance_Search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Insurance_Search_1.resx">
+      <DependentUpon>Insurance_Search_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD_AddLocalDoctor.resx">
+      <DependentUpon>LD_AddLocalDoctor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LD_SearchLD.resx">
+      <DependentUpon>LD_SearchLD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_AddBed.resx">
+      <DependentUpon>Patient_AddBed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_AddPatient.resx">
+      <DependentUpon>Patient_AddPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_AppointmentBooking.resx">
+      <DependentUpon>Patient_AppointmentBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_InpatientAdmit.resx">
+      <DependentUpon>Patient_InpatientAdmit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_Insurance.resx">
+      <DependentUpon>Patient_Insurance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_MedRecord.resx">
+      <DependentUpon>Patient_MedRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_NextOfKin.resx">
+      <DependentUpon>Patient_NextOfKin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_SearchInpatientName.resx">
+      <DependentUpon>Patient_SearchInpatientName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_SearchInsurance.resx">
+      <DependentUpon>Patient_SearchInsurance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_SearchOutpatientName.resx">
+      <DependentUpon>Patient_SearchOutpatientName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_SearchPatientName.resx">
+      <DependentUpon>Patient_SearchPatientName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_SearchPatientName_1.resx">
+      <DependentUpon>Patient_SearchPatientName_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_SearchPatientNextOfKin.resx">
+      <DependentUpon>Patient_SearchPatientNextOfKin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Requisition_Add.resx">
+      <DependentUpon>Requisition_Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room_AddRoom.resx">
+      <DependentUpon>Room_AddRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room_SearchRoom.resx">
+      <DependentUpon>Room_SearchRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_AddStaff.resx">
+      <DependentUpon>Staff_AddStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_AddStaffQual.resx">
+      <DependentUpon>Staff_AddStaffQual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_AddStaffWorkExp.resx">
+      <DependentUpon>Staff_AddStaffWorkExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_SearchByQual.resx">
+      <DependentUpon>Staff_SearchByQual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_SearchByWorkExp.resx">
+      <DependentUpon>Staff_SearchByWorkExp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_SearchStaffName.resx">
+      <DependentUpon>Staff_SearchStaffName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_SearchStaffName_1.resx">
+      <DependentUpon>Staff_SearchStaffName_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_StaffAllocation.resx">
+      <DependentUpon>Staff_StaffAllocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_AddNonSurgicalSupply.resx">
+      <DependentUpon>Supplies_AddNonSurgicalSupply.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_AddPharmaceutical.resx">
+      <DependentUpon>Supplies_AddPharmaceutical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_AddSupplier.resx">
+      <DependentUpon>Supplies_AddSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_AddSurgicalSupply.resx">
+      <DependentUpon>Supplies_AddSurgicalSupply.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_SearchNonSurSupplyName.resx">
+      <DependentUpon>Supplies_SearchNonSurSupplyName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_SearchPharmaName.resx">
+      <DependentUpon>Supplies_SearchPharmaName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_SearchPharmaName_1.resx">
+      <DependentUpon>Supplies_SearchPharmaName_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_SearchSupplierName.resx">
+      <DependentUpon>Supplies_SearchSupplierName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_SearchSupplierName_1.resx">
+      <DependentUpon>Supplies_SearchSupplierName_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies_SearchSurSupplyName.resx">
+      <DependentUpon>Supplies_SearchSurSupplyName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ward_AddWardChargeNurse.resx">
+      <DependentUpon>Ward_AddWardChargeNurse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ward_AddWeek.resx">
+      <DependentUpon>Ward_AddWeek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ward_SearchWard.resx">
+      <DependentUpon>Ward_SearchWard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ward_SearchWeek.resx">
+      <DependentUpon>Ward_SearchWeek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wellmeadows.resx">
+      <DependentUpon>Wellmeadows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="WellmeadowsDBDataSet.xsc">
+      <DependentUpon>WellmeadowsDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WellmeadowsDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WellmeadowsDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WellmeadowsDBDataSet.xss">
+      <DependentUpon>WellmeadowsDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

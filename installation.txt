@@ -1,0 +1,26 @@
+-- วิธีการติดตั้ง Database โดยใช้ SQL Server Management Studio 21 --
+
+1. ตรวจสอบ WellmeadowsDB.bacpac ในโฟล์เดอร์ Installation 
+2. เปิด SQL Server และคลิกขวาที่ Folder Databases
+3. เลือก Import Data-Tier Application
+4. เลือกเป็น Import from a Local Disk กด Browse และเลือก WellmeadowsDB.bacpac
+5. ตั้งชื่อ Database ว่า "WellmeadowsDB"
+6. การติดตั้ง Database เสร็จสิ้น
+
+
+
+-- วิธีการติดตั้งและใช้งาน Visual Basic --
+
+1. แตกไฟล์ SrcG19.zip
+2. เปิด Visual Studio 2022 เลือก Open a Project
+3. และเข้าไปที่ Folder Wellmeadows Hospital
+4. เลือก WellmeadowsHospital.sln
+5. จากนั้นต้องทำการแก้ไข Connection String
+6. เข้าไปที่ App.config
+     - แก้ไข Data Source จาก PondpySoLovely\WELLMEADOWS เป็น Data Source ของตนเอง
+7. และให้ใช้โปรแกรม VS Code หรือ Notepad ในการแก้ไขไฟล์
+     - เปิดไฟล์ My Project > Settings.settings
+         - ในบรรทัดที่ 8 และ 11 เแก้ไข Data Source จาก PondpySoLovely\WELLMEADOWS เป็น Data Source ของตน
+     - เปิดไฟล์ My Project > Settings.Designer.vb
+         -ในบรรทัดที่ 60 แก้ไข Data Source จาก PondpySoLovely\WELLMEADOWS เป็น Data Source ของตน
+8. สามารถใช้งานได้แล้ว
